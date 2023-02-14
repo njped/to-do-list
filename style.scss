@@ -1,0 +1,32 @@
+@use 'var' as *;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.outer {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    color: $white;
+    padding-left: 10px;
+}
+
+i {
+    color:#9b9da0;
+    padding: 0 8px;
+}
+
+.col-3 {
+    background-color: #f8f9fa;
+    height: 100%;
+}
+
+.greyline {
+    width: 100%;
+    border: .5px solid $greyBorder;
+    margin: 2vh 0;
+}
