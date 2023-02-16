@@ -21,10 +21,82 @@ i {
 .col-3 {
   background-color: #f8f9fa;
   height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 2px 0 0;
+}
+.col-3 #searchBar, .col-3 .listofLists, .col-3 .lists {
+  padding: 10px;
+}
+.col-3 #searchBar {
+  margin: 10px 0 10px 2.5px;
+  border: 1px solid #ababab;
+}
+.col-3 .lists {
+  font-size: 1.2rem;
+}
+
+input:focus, input {
+  outline: none;
+  border: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header #title {
+  margin-top: 1vh;
+  border: none;
+  font-size: 1.5rem;
+}
+.header .addTask {
+  color: #ababab;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-right: 1rem;
+}
+.header .deleteList {
+  color: #ababab;
+  padding-right: 1rem;
+}
+
+.addTask:hover, .deleteList:hover, .deleteTask:hover {
+  cursor: pointer;
 }
 
 .greyline {
   width: 100%;
   border: 0.5px solid #f6f6f6;
-  margin: 2vh 0;
+  margin: 1vh 0 5vh 0;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px solid #ababab;
+  padding: 15px 10px;
+  width: 100%;
+}
+
+.leftTask {
+  display: flex;
+  align-items: center;
+}
+.leftTask .checkbox {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 10px;
+}
+
+.deleteTask {
+  color: #ababab;
+}
+
+.createListBtn {
+  margin-top: 10px;
+  border: 1px solid #ababab;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
