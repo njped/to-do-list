@@ -102,6 +102,11 @@ input:focus, input {
 
 }
 
+.editTask {
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
 .deleteTask {
     color: $gray;
 }
