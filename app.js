@@ -1,13 +1,14 @@
 // Global Variables
 const addTask = document.querySelector('.addTask');
-const editTask = document.querySelector('editTask')
+const editTask = document.querySelector('.editTask')
 const deleteList = document.querySelector('.deleteList');
 const deleteTask = document.querySelector('.deleteTask');
 const createListBtn = document.querySelector('.createListBtn');
 const lookAtList = document.querySelector('.lists');
 
-let tasksArray = [];
-let listTitleArray = [];
+const tasksArray = [];
+const listTitleArray = [];
+let indexCount = 0;
 
 // Global AddEventListener
 addTask.addEventListener('click', addTaskFunction);
@@ -33,10 +34,11 @@ function addTaskFunction() {
         </div>
     </div>
     `
-
+    // inner html into an array of tasks
+    newInnerHTML += tasksArray[indexCount];
+    indexCount++;
+    // show and append it after the latest task
     
-        //append it after the latest task
-
 }
 
 function editCurrentTask() {
