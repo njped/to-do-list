@@ -4,11 +4,9 @@ const editTask = document.querySelector('.editTask')
 const deleteList = document.querySelector('.deleteList');
 const deleteTask = document.querySelector('.deleteTask');
 const createListBtn = document.querySelector('.createListBtn');
-const lookAtList = document.querySelector('.lists');
 
 const tasksArray = [];
 const listTitleArray = [];
-let indexCount = 0;
 
 // Global AddEventListener
 addTask.addEventListener('click', addTaskFunction);
@@ -16,12 +14,12 @@ editTask.addEventListener('click', editCurrentTask)
 deleteList.addEventListener('click', deleteListFunction);
 deleteTask.addEventListener('click', deleteTaskFunction);
 createListBtn.addEventListener('click', createList);
-lookAtList.addEventListener('click', showClickedList);
 
 function addTaskFunction() {
     // plus sign is add empty task under the previous task
     
-    // make a string that copies the parent taskContainer class and it's children's classes and elements 
+    // make a string that copies the parent taskContainer class and it's children's classes and elements
+    let node = document.querySelector('.taskContainer')
     let newInnerHTML = `
     <div class="taskContainer">
         <div class="leftTask">
@@ -33,11 +31,9 @@ function addTaskFunction() {
             <i class="fa fa-trash-o deleteTask" style="font-size:24px;"></i>
         </div>
     </div>
-    `
-    // inner html into an array of tasks
-    newInnerHTML += tasksArray[indexCount];
-    indexCount++;
+    `;
     // show and append it after the latest task
+    node.outerHTML += newInnerHTML;
     
 }
 
@@ -62,21 +58,20 @@ function deleteTaskFunction () {
 
 function createList()
 {
-    // button is to grab all the data in the list
-        // put the title of the list into the side bar by creating a new span with the class of lists
-        // while bringing a new blank to-do list in the main area
-        
-
+    console.log('hello')
+    let listName = document.querySelector('.lists').value;
+    let addListName = document.querySelector('.addList');
+    let title = document.getElementById('title');
+    title.value = listName;
+    addListName.outerHTML += `<div class ="listTitle">${listName}</div>`
 }
 
 function checkCheckBox() {
-    // checkbox is marked put a line through text to show it has been completed
+    // checkbox is marked put a line through text or change color to show it has been completed
 
 }
 
-function showClickedList() {
+function showCurrentList() {
     // when clicking on the title name in the side bar print out that lists data
         // current list in side bar will have its background color changed to darker gray
 }
-
-    

@@ -26,8 +26,13 @@
             <div class="row">
                 <div class="col-3"> <!--This is the side bar-->
                     <h2 class="listofLists">Lists</h2>
-                    <input type="search" name="search" placeholder="Search..." id="searchBar">
-                    <span class="lists"></span>
+                    <div class = "addList">
+                        <input type="text" placeholder="Add List..." class="lists"></input>
+                        <button class="createListBtn">Add</button>
+                    </div>
+                    <div>
+                        <button class="deleteList">Delete Current Task</button>
+                    </div>
                 </div>
                 <div class="col-9"> <!--This is the main area-->
                     <header class="header">
@@ -36,7 +41,6 @@
                         </div>
                         <div class="rightHeader">
                             <span class="addTask">+</span>
-                            <i class="fa fa-trash-o deleteList" style="font-size:24px; padding-top: 1.5vh;;"></i>
                         </div>
                     </header>
                     <div class="greyline"></div>
@@ -52,7 +56,7 @@
                                 <i class="fa fa-trash-o deleteTask" style="font-size:24px;"></i>
                             </div>
                         </div>
-                        <button class="createListBtn">Create List</button>
+                        <button class="deleteCheckedTasks">Delete Completed Tasks</button>
                     </main>
                 </div>
             </div>

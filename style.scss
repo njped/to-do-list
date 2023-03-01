@@ -26,18 +26,36 @@ i {
     display: flex;
     flex-flow: column wrap;
     padding: 0 2px 0 0;
-
-    #searchBar, .listofLists, .lists {
-        padding: 10px;
+    
+    .listofLists, .lists {
+        padding: 10px 0 10px 10px;
     }
-
-    #searchBar {
-        margin: 10px 0 10px 2.5px;
-        border: 1px solid $gray
-    }
-
+    
     .lists {
         font-size: 1.2rem;
+    }
+    
+    .createListBtn {
+        margin: 10px 0;
+        border: 1px solid #efefef;
+        padding: 12px;
+        background-color: #dfdede;
+    }
+    
+    .addList {
+        display: inline;
+    }
+
+    .listTitle {
+        background-color: white;
+        padding: 10px 0 10px 5px;
+        margin-bottom: 5px;
+    }
+    
+    .deleteList {
+        border: 1px solid $gray;
+        padding: 0 1rem;
+        margin-left: 3px;
     }
 }
 
@@ -65,10 +83,6 @@ input:focus, input {
     }
 
     
-    .deleteList {
-        color: $gray;
-        padding-right: 1rem;
-    }
     
 }
 
@@ -87,6 +101,7 @@ input:focus, input {
     text-align: center;
     border: 2px solid $gray;
     padding: 15px 10px;
+    margin: 5px 0;
     width: 100%;
 }
 
@@ -111,9 +126,10 @@ input:focus, input {
     color: $gray;
 }
 
-
-.createListBtn {
-    margin-top: 10px;
-    border: 1px solid $gray;
+.deleteCheckedTasks {
+    margin: 20px 0;
+    width: 100%;
     border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #dfdede;
 }

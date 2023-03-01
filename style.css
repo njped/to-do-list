@@ -25,15 +25,30 @@ i {
   flex-flow: column wrap;
   padding: 0 2px 0 0;
 }
-.col-3 #searchBar, .col-3 .listofLists, .col-3 .lists {
-  padding: 10px;
-}
-.col-3 #searchBar {
-  margin: 10px 0 10px 2.5px;
-  border: 1px solid #ababab;
+.col-3 .listofLists, .col-3 .lists {
+  padding: 10px 0 10px 10px;
 }
 .col-3 .lists {
   font-size: 1.2rem;
+}
+.col-3 .createListBtn {
+  margin: 10px 0;
+  border: 1px solid #efefef;
+  padding: 12px;
+  background-color: #dfdede;
+}
+.col-3 .addList {
+  display: inline;
+}
+.col-3 .listTitle {
+  background-color: white;
+  padding: 10px 0 10px 5px;
+  margin-bottom: 5px;
+}
+.col-3 .deleteList {
+  border: 1px solid #ababab;
+  padding: 0 1rem;
+  margin-left: 3px;
 }
 
 input:focus, input {
@@ -57,10 +72,6 @@ input:focus, input {
   font-weight: lighter;
   padding-right: 1rem;
 }
-.header .deleteList {
-  color: #ababab;
-  padding-right: 1rem;
-}
 
 .addTask:hover, .deleteList:hover, .deleteTask:hover {
   cursor: pointer;
@@ -78,6 +89,7 @@ input:focus, input {
   text-align: center;
   border: 2px solid #ababab;
   padding: 15px 10px;
+  margin: 5px 0;
   width: 100%;
 }
 
@@ -100,8 +112,10 @@ input:focus, input {
   color: #ababab;
 }
 
-.createListBtn {
-  margin-top: 10px;
-  border: 1px solid #ababab;
+.deleteCheckedTasks {
+  margin: 20px 0;
+  width: 100%;
   border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #dfdede;
 }/*# sourceMappingURL=style.css.map */
