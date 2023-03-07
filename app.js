@@ -61,8 +61,8 @@ function createList()
     console.log('hello')
     let listName = document.querySelector('.lists').value;
     let addListName = document.querySelector('.addList');
-    let title = document.getElementById('title');
-    title.value = listName;
+    let title = document.getElementById('title').value;
+    title = listName;
     addListName.outerHTML += `<div class ="listTitle">${listName}</div>`
 }
 
