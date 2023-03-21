@@ -29,6 +29,7 @@
                     <div class = "addList">
                         <input type="text" placeholder="Add List..." class="lists"></input>
                         <button class="createListBtn">Add</button>
+                        <div id = "listError"></div>
                         <ul class="listContainer">
 
                         </ul>
@@ -37,7 +38,7 @@
                         <button class="deleteList">Delete Current List</button>
                     </div>
                 </div>
-                <div class="col-9"> <!--This is the main area-->
+                <main class="col-9"> <!--This is the main area-->
                     <header class="header">
                         <div class="leftHeader">
                             <h2 id="title"></h2>
@@ -45,7 +46,7 @@
                     </header>
                     <div class="greyline"></div>
                     <!-- Input Checkboxes go here= -->
-                    <main class="listContainer">
+                    <section class="listContainer">
                         <div class="addTaskContainer">
                             <div class="leftTask">
                                 <input type="text" name="Tasks" class="taskList" placeholder="Type Tasks Here">
@@ -54,9 +55,10 @@
                                 <button class="addTask">Add Task</button>
                             </div>
                         </div>
+                        <div class="taskContainer"></div>
                         <button class="deleteCheckedTasks">Delete Completed Tasks</button>
-                    </main>
-                </div>
+                    </section>
+                </main>
             </div>
         </div>
     </div>

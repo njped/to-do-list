@@ -92,7 +92,7 @@ input:focus, input {
     margin: 1vh 0 5vh 0;
 }
 
-.taskContainer {
+.task {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -147,4 +147,17 @@ input:focus, input {
     border-radius: 5px;
     padding: 5px;
     border: 1px solid #dfdede;
+}
+
+.selectedList {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#listError {
+    color: red;
+}
+
+.completedTask {
+    text-decoration: line-through;
 }
